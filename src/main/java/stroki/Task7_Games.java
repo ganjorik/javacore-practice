@@ -3,7 +3,7 @@ package stroki;
 import java.util.Random;
 import java.util.Scanner;
 
-public class Games {
+public class Task7_Games {
 
 	public static void main(String[] args) {
 
@@ -17,15 +17,13 @@ public class Games {
 		String[] verbs = {"бегает", "танцует", "программирует", "летает", "смеется",
 				"читает", "прыгает", "поет", "рисует", "спит"};
 
-		Random random = new Random();
-
 		Scanner scanner = new Scanner(System.in);
+
+		Random random = new Random();
 
 		System.out.println("Сколько фраз сгенерировать?");
 
 		int count = scanner.nextInt();
-
-
 
 		for (int i = 0; i < count; i++) {
 
