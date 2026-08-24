@@ -1,6 +1,6 @@
 package stroki;
 
-public class Task8_StringTasks {
+public class StringTasks {
 	public static void main(String args[]) {
 
 		System.out.println(getFormatLogin("   AdMiN   "));

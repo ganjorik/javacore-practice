@@ -3,7 +3,7 @@ package stroki;
 import java.util.Random;
 import java.util.Scanner;
 
-public class Task7_Games {
+public class Games {
 
 	public static void main(String[] args) {
 

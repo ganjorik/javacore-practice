@@ -2,7 +2,7 @@ package map;
 
 import java.util.*;
 
-public class getOrDefault {
+public class GetOrDefaultDemo {
 
 	public static void main(String[] args) {
 
@@ -23,9 +23,11 @@ public class getOrDefault {
 
 		for (int number : arr) {
 
-			int count = duplicatesMap.getOrDefault(number,0);
+			/*int count = duplicatesMap.getOrDefault(number,0);
 
-			duplicatesMap.put(number, count + 1);
+			duplicatesMap.put(number, count + 1);*/
+
+			duplicatesMap.merge(number, 1, Integer::sum);
 		}
 
 		System.out.println(duplicatesMap);
