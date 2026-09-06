@@ -32,6 +32,7 @@ public class EventHandler implements Callable {
         Callable<String> eventHandler3 = new EventHandler(dateTime1.plusSeconds(15));
         Callable<String> eventHandler4 = new EventHandler(dateTime1.plusSeconds(20));
         Callable<String> eventHandler5 = new EventHandler(dateTime1.plusSeconds(25));
+
         Future<String> result1 = pool.submit(eventHandler1);
         Future<String> result2 = pool.submit(eventHandler2);
         Future<String> result3 = pool.submit(eventHandler3);
